@@ -1,0 +1,38 @@
+LIBRARY	"unispim6.ime"
+
+SECTIONS
+		.upim_shm READ WRITE SHARED
+EXPORTS
+		ImeConversionList
+		ImeConfigure
+		ImeDestroy
+		ImeEscape
+		ImeProcessKey
+		ImeSelect
+		ImeSetActiveContext
+		ImeSetCompositionString
+		ImeToAsciiEx
+		ImeInquire
+		ImeRegisterWord
+		ImeUnregisterWord
+		ImeGetRegisterWordStyle
+		ImeEnumRegisterWord
+		NotifyIME
+		UIWindowProcedure
+		PaintDemoWindow
+		LoadConfig
+		LoadDefaultConfig
+		SaveConfig
+		GetWordLibInformation
+		CreateWordLibrary
+		ExportWordLibrary
+		ImportWordLibrary
+		CheckAndUpdateWordLibrary
+		NotifyDeleteWordLibrary
+		CompressFile
+		UncompressFile
+		UpdateWordLibrary
+		DeleteCiFromAllWordLib
+		PIM_ReloadBHResource
+		PIM_ReloadZiResource
+		PIM_ReloadFontMapResource

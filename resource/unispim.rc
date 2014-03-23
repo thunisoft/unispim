@@ -1,0 +1,183 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_UNISPIM             ICON                    "logo_ime.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_IMEMENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        POPUP "更换主题"
+        BEGIN
+            MENUITEM "下载更多主题...",                   ID_SKIN_BROWSER
+            MENUITEM "主题制作...",                     ID_THEME_MAKER
+            MENUITEM SEPARATOR
+        END
+        POPUP "软键盘"
+        BEGIN
+            MENUITEM "常用符号       ⑴◆＄ ",             ID_SKB0
+            MENUITEM "标点符号     『？！】",               ID_SKB1
+            MENUITEM "特殊符号      §●△",               ID_SKB2
+            MENUITEM "表格线        ┏ ┯ ┐",            ID_SKB3
+            MENUITEM SEPARATOR
+            MENUITEM "数字序号     Ⅻ⒉㈢",                ID_SKB4
+            MENUITEM "数学符号     ≈∨∠",                ID_SKB5
+            MENUITEM "单位符号     万叁℃",                ID_SKB6
+            MENUITEM SEPARATOR
+            MENUITEM "拼音符号     ā é ī",              ID_SKB7
+            MENUITEM "注音符号　 ㄘㄨㄜ",                   ID_SKB8
+            MENUITEM "日文平假名 さしす",                   ID_SKB9
+            MENUITEM "日文片假名 サシス",                   ID_SKB10
+            MENUITEM "希腊字母     α β γ",              ID_SKB11
+            MENUITEM "俄文字母 　 м н п",                ID_SKB12
+            MENUITEM "英文键盘     a b c",              ID_SKB13
+            MENUITEM "PC键盘       a b c",            ID_SKB14
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "英文输入法",                       ID_ENGLISH_INPUT
+        MENUITEM "状态窗口",                        ID_SHOWSTATUS
+        MENUITEM "光标跟随",                        ID_GBGS
+        MENUITEM SEPARATOR
+        MENUITEM "全拼",                          ID_QUANPIN
+        MENUITEM "双拼",                          ID_SHUANGPIN
+        MENUITEM SEPARATOR
+        MENUITEM "简体",                          ID_JIANTI
+        MENUITEM "繁体",                          ID_FANTI
+        MENUITEM "全集",                          ID_HZ_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "设置...",                       ID_SETUP
+        POPUP "辅助工具"
+        BEGIN
+            MENUITEM "设置向导",                        ID_CFG_WIZARD
+            //MENUITEM "输入法管理器",                      ID_IMEMANAGER
+            MENUITEM "偏旁部首检字",                      ID_PIANPANGJIANZI
+            MENUITEM "拆字输入",                        ID_COMPOSE
+            MENUITEM "符号输入",                        ID_SPWPLUGIN
+            MENUITEM "主题制作",                        ID_THEME_MAKER
+            MENUITEM "词库管理",                        ID_ADDWORD
+            MENUITEM "批量造词",                        ID_WORD_BATCH
+            MENUITEM "汉字管理",                        ID_ZI_MANAGE
+        END
+        MENUITEM SEPARATOR
+        POPUP "帮助"
+        BEGIN
+            MENUITEM "帮助",                          ID_HELP_SF
+            MENUITEM "版本信息...",                     ID_VERSION
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,9,0,22
+ PRODUCTVERSION 6,9,0,0
+ FILEFLAGSMASK 0x1fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x3L
+ FILESUBTYPE 0xbL
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "Comments", "华宇拼音输入法IME文件"
+            VALUE "CompanyName", "北京华宇软件股份有限公司"
+            VALUE "FileDescription", "华宇拼音输入法V6.9"
+            VALUE "FileVersion", "6.9.0.22"
+            VALUE "InternalName", "unispim v6"
+            VALUE "LegalCopyright", "Copyright (C) Thunisoft 2011"
+            VALUE "LegalTrademarks", "Thunisoft"
+            VALUE "OriginalFilename", "unispim6.ime"
+            VALUE "ProductName", "华宇拼音输入法"
+            VALUE "ProductVersion", "6.9"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
