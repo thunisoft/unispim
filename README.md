@@ -1,30 +1,28 @@
-# Unispim(����ƴ�����뷨)
+﻿# Unispim
+华宇拼音输入法
 
-����ƴ�����뷨�Ǳ������������ɷ����޹�˾(http://www.thunisoft.com)
-�����з���һ�����뷨��������������֪ʶ��Ȩ���������û���ȫ��ѡ�
+华宇拼音输入法是北京华宇软件股份有限公司自主研发的一款输入法软件，
+具有自主知识产权、对最终用户完全免费。
 
-����ƴ�����뷨�Ķ�λ����һ�����������Ĺ����Ե���ѵĲ�Ʒ���������һֱû�б䡣
-�������ǽ�����ƴ�����뷨Դ�뿪Դ��Ŀ����ϣ���ܸ���ṫ�洴������ֵ��
-�����Ի���ƴ�����뷨��ʲô�õĽ�����뷨����ӭ��������ϵ��
+华宇拼音输入法的定位是做一个服务于社会的公益性的免费的产品，这个初衷一直没有变。
+现在我们将华宇拼音输入法源码开源，目的是希望能给社会公益创造更多价值。
 
+如果你对华宇拼音输入法有什么好的建议或想法，欢迎与我们联系。
 
-## ��ο�ʼ
+## 如何开始
+- 安装 Visiual Studio 2010
+- 打开 .sln 文件
 
-- ��װ Visiual Studio 2010
-- �� .sln �ļ�
-
-
-## LICENSE(��ԴЭ��)
+## LICENSE
 Licensed under the LGPL, Version 2.1 (the "License");
+
 Copyright 1999 Beijing Thunisoft Corporation Limited.
 All rights reserved.
 
-��LGPL, 2.1�汾Э���¿�Դ���������������ɷ����޹�˾��Ȩ���С�
+华宇拼音输入法在LGPL, 2.1版本协议下开源，版权归北京华宇软件股份有限公司所有。
 
-
-## �����Դ
-
-- ����ƴ�����뷨��վ��http://www.unispim.com
-- ����ƴ�����뷨��̳&������������http://bbs.unispim.com
-
+## 相关资源
+- 华宇拼音输入法网站：http://www.unispim.com
+- 华宇拼音输入法论坛&开发者社区：http://bbs.unispim.com
+- 北京华宇软件股份有限公司：http://www.thunisoft.com
 
