@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>server_certification.cer</file>
+        <file>image/logo.ico</file>
+        <file>image/logo.png</file>
+        <file>image/background_rect.png</file>
+        <file>style.qss</file>
+        <file>image/close_white.png</file>
+    </qresource>
+</RCC>

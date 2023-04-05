@@ -1,0 +1,167 @@
+DeleteTipWidget
+{
+background-color:#F8FCFF;
+color:#000000;
+font-size:14px;
+border:1px solid #CCCCCC;
+}
+QLabel[type="delete_btn"]
+{
+color:#000000;
+font-size:12px;
+border:none;
+}
+/*QCheckBox的样式*/
+QCheckBox
+{
+height: 30px;
+min-height:30px;
+font-size:14px;
+outline:none;
+}
+QCheckBox:indicator{
+width:14px;
+height:14px;
+}
+QCheckBox::indicator:unchecked{
+image:url(:/image/toolbarConfig/unchecked.png);
+}
+QCheckBox::indicator:unchecked:hover{
+image:url(:/image/toolbarConfig/hover-unchecked.png);
+}
+
+QCheckBox::indicator:checked{
+image:url(:/image/toolbarConfig/checked.png);
+}
+QCheckBox::indicator:checked:hover{
+image:url(:/image/toolbarConfig/hover-checked.png);
+}
+
+
+.QPushButton[type="puretextbtn"]
+{
+border:none;
+color:#4D9CF8;
+font-size:14px;
+min-height:13px;
+outline:none;
+font-weight: 400;
+}
+.QPushButton[type="puretextbtn"]:pressed
+{
+border:none;
+}
+.QPushButton[type="puretextbtn"]:hover
+{
+color:rgb(85,118,189);
+}
+.QLabel[type="username"]
+{
+font-size:14px;
+color:#017BC9;
+}
+
+.QLabel[type="h1"]
+{
+font-size:14px;
+color:#000000;
+padding-left: 0px;
+padding-top: 0px;
+font-weight: 400;
+}
+.QLabel[type="h2"]
+{
+font-size:13px;
+color:#000000;
+padding-left: 0px;
+padding-top: 0px;
+font-weight: 400;
+}
+
+/*普通按钮的样式*/
+QWidget QPushButton[type="normal"]{
+font-size:14px;
+border:1px solid rgb(77,156,248);
+border-radius:2px;
+color:#FFFFFF;
+background:#017BC9;
+outline:none;
+font-weight: 400;
+}
+QWidget QPushButton[type="normal"]:checked{
+width:80px;
+height:30px;
+background:rgba(77,156,248,1);
+border-radius:2px;
+color:white;
+}
+QWidget QPushButton[type="normal"]:pressed{
+width:80px;
+height:30px;
+background:#017BC9;
+border-radius:2px;
+color:#FFFFFF;
+}
+
+QWidget QPushButton[type="normal"]:hover{
+width:80px;
+height:30px;
+background:#017BC9;
+border-radius:2px;
+color:#FFFFFF;
+}
+
+QWidget QPushButton[type="normal"]:!enabled{
+color:rgb(128,128,128);
+background:rgb(191,191,191);
+border:2px solid rgb(191,191,191);
+}
+
+/*close按钮的样式*/
+.QPushButton[type="closebtn"]{
+image:url(:/image/toolbarConfig/left_btn_close.png);
+border:0px solid;
+width:50px;
+height:50px;
+background:transparent;
+}
+.QPushButton[type="closebtn"]:hover{
+image:url(:/image/toolbarConfig/left_btn_close_hover.png);
+background:#FD4D4D
+}
+.QPushButton[type="closebtn"]:pressed{
+image:url(:/image/toolbarConfig/left_btn_close_hover.png);
+border:0px solid;
+}
+
+QWidget#inner_widget
+{
+   background-color:#FFFFFF;
+   border: 1px solid #CCCCCC;
+}
+
+ToolBarMainMenu
+{
+background-color:#FFFFFF;
+}
+ToolBarMainMenu QWidget[type="inner_widget"]
+{
+background-color:#FFFFFF;
+border: 1px solid #CCCCCC;
+}
+
+ToolbarMenuItem QLabel
+{
+font-size:14px;
+color:#000000;
+}
+ToolbarMenuItem
+{
+ border:none;
+ background-color:#FFFFFF;
+}
+ToolbarMenuItem:hover
+{
+ border:2px solid #017BC9;
+ background-color:#FFFFFF;
+}

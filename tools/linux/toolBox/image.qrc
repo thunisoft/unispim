@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/close.png</file>
+        <file>image/close_hover.png</file>
+        <file>image/download.png</file>
+        <file>image/more-addons.png</file>
+        <file>image/ocr.png</file>
+        <file>image/settings.png</file>
+        <file>image/special-symbols.png</file>
+        <file>image/voice.png</file>
+        <file>toolbox_style.qss</file>
+        <file>certification_server.cer</file>
+    </qresource>
+</RCC>

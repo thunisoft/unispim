@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="29px" viewBox="0 0 28 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>setting_hover_update</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="工具栏按键" transform="translate(-424.000000, -252.000000)">
+            <g id="setting_hover_update" transform="translate(424.000000, 252.000000)">
+                <polygon id="矩形-34-拷贝-9" fill="#F2F5F7" fill-rule="nonzero" points="0 0 28 0 28 29 0 29"></polygon>
+                <g id="编组-18" transform="translate(7.000000, 6.000000)" fill="#00A296">
+                    <rect id="矩形" x="0" y="2" width="6" height="6"></rect>
+                    <rect id="矩形" x="0" y="10" width="6" height="6"></rect>
+                    <rect id="矩形" x="8" y="10" width="6" height="6"></rect>
+                    <rect id="矩形" transform="translate(11.000000, 5.000000) rotate(-315.000000) translate(-11.000000, -5.000000) " x="8" y="2" width="6" height="6" rx="1"></rect>
+                </g>
+                <circle id="椭圆形" fill="#E11F20" cx="22.5" cy="5.5" r="2.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

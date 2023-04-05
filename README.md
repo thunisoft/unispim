@@ -14,12 +14,12 @@
 - 打开 .sln 文件
 
 ## LICENSE
-Licensed under the LGPL, Version 2.1 (the "License");
+Licensed under the LGPL, Version 3 (the "License");
 
 Copyright 1999 Beijing Thunisoft Corporation Limited.
 All rights reserved.
 
-华宇拼音输入法在LGPL, 2.1版本协议下开源，版权归北京华宇软件股份有限公司所有。
+华宇拼音输入法在LGPL, v3版本协议下开源，版权归北京华宇软件股份有限公司所有。
 
 ## 相关资源
 - 华宇拼音输入法网站：http://www.unispim.com

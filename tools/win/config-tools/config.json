@@ -1,0 +1,446 @@
+{
+    "IsShowToolBar": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "account_auto_update": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "always_expand_candidates": {
+        "currentvalue": 0,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "candidates_per_line": {
+        "currentvalue": 5,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "chinese_font_name": {
+        "currentvalue": "微软雅黑",
+        "defaultvalue": "",
+        "group": "user",
+        "type": "string"
+    },
+    "ci_option": {
+        "currentvalue": 487,
+        "defaultvalue": 487,
+        "group": "user",
+        "type": "int"
+    },
+    "clientid": {
+        "currentvalue": "ceshi",
+        "defaultvalue": "ceshi",
+        "group": "system",
+        "type": "string"
+    },
+    "customphrasedisplaypos": {
+        "currentvalue": 3,
+        "defaultvalue": 3,
+        "group": "user",
+        "type": "int"
+    },
+    "enableCheckUpdateAuto": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "enableCustomPhrase": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "english_dot_follow_number": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "expand_candidate_lines": {
+        "currentvalue": 4,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "font_height": {
+        "currentvalue": 16,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "fuzzy_mode": {
+        "currentvalue": 0,
+        "defaultvalue": 0,
+        "group": "user",
+        "type": "int"
+    },
+    "hide_status_when_full_scree": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "hz_option": {
+        "currentvalue": 741,
+        "defaultvalue": 741,
+        "group": "user",
+        "type": "int"
+    },
+    "hz_output_mode": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "i_mode_enabled": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "ignore_fullshape": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "key_candidate_2nd_3rd": {
+        "currentvalue": 0,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "key_change_mode": {
+        "currentvalue": 0,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "key_english_input": {
+        "currentvalue": 69,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "key_jian_fan": {
+        "currentvalue": 70,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "key_pair_candidate_page": {
+        "currentvalue": 16,
+        "defaultvalue": 16,
+        "group": "user",
+        "type": "int"
+    },
+    "key_pair_zi_from_word": {
+        "currentvalue": 8,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "key_quan_shuang_pin": {
+        "currentvalue": 83,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "key_soft_kbd": {
+        "currentvalue": 75,
+        "defaultvalue": 75,
+        "group": "user",
+        "type": "int"
+    },
+    "key_status_window": {
+        "currentvalue": 90,
+        "defaultvalue": 90,
+        "group": "user",
+        "type": "int"
+    },
+    "local_wordlib_network_update": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "login": {
+        "currentvalue": 0,
+        "defaultvalue": 0,
+        "group": "system",
+        "type": "int"
+    },
+    "loginid": {
+        "currentvalue": "ceshi",
+        "defaultvalue": "ceshi",
+        "group": "system",
+        "type": "string"
+    },
+    "numpad_select_enabled": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "pinyin_mode": {
+        "currentvalue": 0,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "post_after_switch": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "proofread": {
+        "currentvalue": 0,
+        "defaultvalue": 0,
+        "group": "user",
+        "type": "int"
+    },
+    "proofread_mask": {
+        "currentvalue": 0,
+        "defaultvalue": 0,
+        "group": "user",
+        "type": "int"
+    },
+    "server_addr": {
+        "currentvalue": "",
+        "defaultvalue": "",
+        "group": "system",
+        "type": "string"
+    },
+    "server_port": {
+        "currentvalue": 80,
+        "defaultvalue": 80,
+        "group": "system",
+        "type": "int"
+    },
+    "server_scheme": {
+        "currentvalue": "http",
+        "defaultvalue": "http",
+        "group": "system",
+        "type": "string"
+    },
+    "shortcutindex": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "show_hint_msg": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "show_sp_hint": {
+        "currentvalue": 5,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "show_vertical_candidate": {
+        "currentvalue": 0,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "sp_file_name": {
+        "currentvalue": "华宇双拼",
+        "defaultvalue": "",
+        "group": "user",
+        "type": "string"
+    },
+    "spw_position": {
+        "currentvalue": 4,
+        "defaultvalue": 4,
+        "group": "user",
+        "type": "int"
+    },
+    "startup_with_english_input": {
+        "currentvalue": 0,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "suggest_syllable_location": {
+        "currentvalue": 4,
+        "defaultvalue": 4,
+        "group": "user",
+        "type": "int"
+    },
+    "suggest_word_count": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "suggest_word_location": {
+        "currentvalue": 2,
+        "defaultvalue": 2,
+        "group": "user",
+        "type": "int"
+    },
+    "tool_bar_config": {
+        "currentvalue": 15,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "u_mode_enabled": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "use_english_input_mode": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "use_fuzzy": {
+        "currentvalue": 0,
+        "defaultvalue": 0,
+        "group": "user",
+        "type": "int"
+    },
+    "use_hz_tone": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "use_icw": {
+        "currentvalue": 0,
+        "defaultvalue": 0,
+        "group": "user",
+        "type": "int"
+    },
+    "use_key_english_input": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "use_key_jian_fan": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "use_key_quan_shuang_pin": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "use_key_soft_kbd": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "use_key_status_window": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "use_special_word": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "use_sys_phrase": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "system",
+        "type": "int"
+    },
+    "use_tab_expand_candidates": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "use_word_suggestion": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "user_id": {
+        "currentvalue": 0,
+        "defaultvalue": 0,
+        "group": "user",
+        "type": "int"
+    },
+    "username": {
+        "currentvalue": "ceshi",
+        "defaultvalue": "ceshi",
+        "group": "user",
+        "type": "string"
+    },
+    "wordlib_auto_update": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "wordlib_name": {
+        "currentvalue": "user.uwl;sys.uwl;",
+        "defaultvalue": "",
+        "group": "user",
+        "type": "string"
+    },
+    "wubi_five_unique": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+    "wubi_four_unique": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "user",
+        "type": "int"
+    },
+	"using_history_shortcut": {
+        "currentvalue": 0,
+        "defaultvalue": 0,
+        "group": "state",
+        "type": "int"
+    },
+	"using_english_punctuation_in_chinese_mode": {
+        "currentvalue": 0,
+        "defaultvalue": 0,
+        "group": "state",
+        "type": "int"
+    },
+    "show_join_the_plan_option": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "system",
+        "type": "int"
+    },
+    "show_domain_option": {
+        "currentvalue": 1,
+        "defaultvalue": 1,
+        "group": "system",
+        "type": "int"
+    }
+}

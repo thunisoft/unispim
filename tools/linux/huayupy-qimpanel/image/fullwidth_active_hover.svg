@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="29px" viewBox="0 0 28 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>fullwidth_active_hover</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="工具栏按键" transform="translate(-217.000000, -252.000000)" fill-rule="nonzero">
+            <g id="fullwidth_active_hover" transform="translate(217.000000, 252.000000)">
+                <polygon id="矩形-34-拷贝-2" fill="#F2F5F7" points="0 0 28 0 28 29 0 29"></polygon>
+                <path d="M14,8 C17.87,8 21,11.13 21,15 C21,18.87 17.87,22 14,22 C10.13,22 7,18.87 7,15 C7,11.13 10.13,8 14,8 Z" id="全角" fill="#00A296"></path>
+            </g>
+        </g>
+    </g>
+</svg>

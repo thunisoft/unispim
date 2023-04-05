@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8111E462-0873-3815-A4EB-53171F5CEB68}</ProjectGuid>
+    <RootNamespace>config-tools</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>config-tools</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>config-tools</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <QtInstall>5.9_msvc2015</QtInstall>
+    <QtModules>core;xml;sql;network;gui;svg;widgets</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <QtInstall>5.9_msvc2015</QtInstall>
+    <QtModules>core;xml;sql;network;gui;svg;widgets;concurrent</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;$(WindowsSDK80Path)Include\um;$(WindowsSDK80Path)Include\shared;C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/shared;..\..\3rd\OpenSSL-Win32\include;release;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:throwingNew -Zc:referenceBinding /utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_DEPRECATED_WARNINGS;_UNICODE;ZLIB_WINAPI;QT_NO_DEBUG;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shell32.lib;User32.Lib;Advapi32.Lib;libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86;..\..\..\3rd\OpenSSL-Win32\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_DEPRECATED_WARNINGS;_UNICODE;ZLIB_WINAPI;QT_NO_DEBUG;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_SQL_LIB;QT_XML_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>$(Configuration)/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>$(Configuration)</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <InitFuncName>image</InitFuncName>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>$(Configuration)</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>$(ProjectDir)</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;$(WindowsSDK80Path)Include\um;$(WindowsSDK80Path)Include\shared;C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/shared;..\..\3rd\OpenSSL-Win32\include;debug;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:throwingNew -Zc:referenceBinding /utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_DEPRECATED_WARNINGS;_UNICODE;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shell32.lib;User32.Lib;Advapi32.Lib;libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86;..\..\..\3rd\OpenSSL-Win32\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_DEPRECATED_WARNINGS;_UNICODE;ZLIB_WINAPI;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_SQL_LIB;QT_XML_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>$(Configuration)/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>$(Configuration)</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <InitFuncName>image</InitFuncName>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>$(Configuration)</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>$(ProjectDir)</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="mywordlibtableview.cpp" />
+    <ClCompile Include="WLConverter.cpp" />
+    <ClCompile Include="aboutstackedwidget.cpp" />
+    <ClCompile Include="addoreditphrasedialog.cpp" />
+    <ClCompile Include="adduserwordlibtableitem.cpp" />
+    <ClCompile Include="advancedconfigstackedwidget.cpp" />
+    <ClCompile Include="customize_ui\basestackedwidget.cpp" />
+    <ClCompile Include="basicconfigstackedwidget.cpp" />
+    <ClCompile Include="checkfailedstackedwidget.cpp" />
+    <ClCompile Include="config.cpp" />
+    <ClCompile Include="customize_ui\customize_mainwindow.cpp" />
+    <ClCompile Include="customize_ui\customize_qwidget.cpp" />
+    <ClCompile Include="customize_ui\customize_tablewidget.cpp" />
+    <ClCompile Include="customize_ui\customizebtngroup.cpp" />
+    <ClCompile Include="customize_ui\customizephrasebtn.cpp" />
+    <ClCompile Include="customize_ui\customtextedit.cpp" />
+    <ClCompile Include="downloadthread.cpp" />
+    <ClCompile Include="dpiadaptor.cpp" />
+    <ClCompile Include="editphrasefiledialog.cpp" />
+    <ClCompile Include="element_style.cpp" />
+    <ClCompile Include="feedbackstackedwidget.cpp" />
+    <ClCompile Include="fileviewerdialog.cpp" />
+    <ClCompile Include="fuzzydialog.cpp" />
+    <ClCompile Include="informmsgbox.cpp" />
+    <ClCompile Include="iniutils.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="mysqlite.cpp" />
+    <ClCompile Include="networkhandler.cpp" />
+    <ClCompile Include="networktest.cpp" />
+    <ClCompile Include="newenrollstackedwidget.cpp" />
+    <ClCompile Include="newschemedlg.cpp" />
+    <ClCompile Include="outputwordlibdlg.cpp" />
+    <ClCompile Include="personaccountstackedwidget.cpp" />
+    <ClCompile Include="phrasemodel.cpp" />
+    <ClCompile Include="phraseoptionwidget.cpp" />
+    <ClCompile Include="phrasevalidator.cpp" />
+    <ClCompile Include="servicecontroller.cpp" />
+    <ClCompile Include="share_segment.c" />
+    <ClCompile Include="sharedmemorycheckthread.cpp" />
+    <ClCompile Include="customize_ui\singlekey.cpp" />
+    <ClCompile Include="skinconfigstackedwidget.cpp" />
+    <ClCompile Include="customize_ui\spkeyboard.cpp" />
+    <ClCompile Include="spschememodel.cpp" />
+    <ClCompile Include="spschemeviewdlg.cpp" />
+    <ClCompile Include="spsetplandlg.cpp" />
+    <ClCompile Include="stylepreviewwidght.cpp" />
+    <ClCompile Include="suggestsetwidget.cpp" />
+    <ClCompile Include="syllableapi.cpp" />
+    <ClCompile Include="syswordlibcheckthread.cpp" />
+    <ClCompile Include="customize_ui\tableviewdelegate.cpp" />
+    <ClCompile Include="tinyxml2.cpp" />
+    <ClCompile Include="toviewphrasedialog.cpp" />
+    <ClCompile Include="updatesyswordlibthread.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="wordlibapi.cpp" />
+    <ClCompile Include="customize_ui\wordlibitemwidget.cpp" />
+    <ClCompile Include="wordlibstackedwidget.cpp" />
+    <ClCompile Include="wordlibtableitemwidget.cpp" />
+    <ClCompile Include="wordlibutils.cpp" />
+    <ClCompile Include="zlib\zip.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WLConverter.h" />
+    <ClInclude Include="\" />
+    <QtMoc Include="aboutstackedwidget.h">
+    </QtMoc>
+    <QtMoc Include="addoreditphrasedialog.h">
+    </QtMoc>
+    <QtMoc Include="adduserwordlibtableitem.h">
+    </QtMoc>
+    <QtMoc Include="advancedconfigstackedwidget.h">
+    </QtMoc>
+    <ClInclude Include="customize_ui\basestackedwidget.h" />
+    <QtMoc Include="basicconfigstackedwidget.h">
+    </QtMoc>
+    <QtMoc Include="checkfailedstackedwidget.h">
+    </QtMoc>
+    <ClInclude Include="commondef.h" />
+    <ClInclude Include="config.h" />
+    <QtMoc Include="customize_ui\customize_mainwindow.h">
+    </QtMoc>
+    <QtMoc Include="customize_ui\customize_qwidget.h">
+    </QtMoc>
+    <QtMoc Include="customize_ui\customize_tablewidget.h">
+    </QtMoc>
+    <QtMoc Include="customize_ui\customizebtngroup.h">
+    </QtMoc>
+    <QtMoc Include="customize_ui\customizephrasebtn.h">
+    </QtMoc>
+    <QtMoc Include="customize_ui\customtextedit.h">
+    </QtMoc>
+    <QtMoc Include="downloadthread.h">
+    </QtMoc>
+    <QtMoc Include="dpiadaptor.h">
+    </QtMoc>
+    <QtMoc Include="editphrasefiledialog.h">
+    </QtMoc>
+    <QtMoc Include="element_style.h">
+    </QtMoc>
+    <QtMoc Include="feedbackstackedwidget.h">
+    </QtMoc>
+    <QtMoc Include="fileviewerdialog.h">
+    </QtMoc>
+    <QtMoc Include="fuzzydialog.h">
+    </QtMoc>
+    <QtMoc Include="informmsgbox.h">
+    </QtMoc>
+    <ClInclude Include="iniutils.h" />
+    <QtMoc Include="mainwindow.h">
+    </QtMoc>
+    <ClInclude Include="zlib\miniz.h" />
+    <QtMoc Include="mysqlite.h">
+    </QtMoc>
+    <QtMoc Include="mywordlibtableview.h">
+    </QtMoc>
+    <QtMoc Include="networkhandler.h">
+    </QtMoc>
+    <QtMoc Include="networktest.h">
+    </QtMoc>
+    <QtMoc Include="newenrollstackedwidget.h">
+    </QtMoc>
+    <QtMoc Include="newschemedlg.h">
+    </QtMoc>
+    <QtMoc Include="outputwordlibdlg.h">
+    </QtMoc>
+    <QtMoc Include="personaccountstackedwidget.h">
+    </QtMoc>
+    <ClInclude Include="phrasemodel.h" />
+    <QtMoc Include="phraseoptionwidget.h">
+    </QtMoc>
+    <ClInclude Include="phrasevalidator.h" />
+    <QtMoc Include="servicecontroller.h">
+    </QtMoc>
+    <ClInclude Include="share_segment.h" />
+    <QtMoc Include="sharedmemorycheckthread.h">
+    </QtMoc>
+    <QtMoc Include="customize_ui\singlekey.h">
+    </QtMoc>
+    <QtMoc Include="skinconfigstackedwidget.h">
+    </QtMoc>
+    <QtMoc Include="customize_ui\spkeyboard.h">
+    </QtMoc>
+    <QtMoc Include="spschememodel.h">
+    </QtMoc>
+    <QtMoc Include="spschemeviewdlg.h">
+    </QtMoc>
+    <QtMoc Include="spsetplandlg.h">
+    </QtMoc>
+    <QtMoc Include="stylepreviewwidght.h">
+    </QtMoc>
+    <QtMoc Include="suggestsetwidget.h">
+    </QtMoc>
+    <ClInclude Include="syllableapi.h" />
+    <QtMoc Include="syswordlibcheckthread.h">
+    </QtMoc>
+    <QtMoc Include="customize_ui\tableviewdelegate.h">
+    </QtMoc>
+    <ClInclude Include="tinyxml2.h" />
+    <QtMoc Include="toviewphrasedialog.h">
+    </QtMoc>
+    <ClInclude Include="unistd.h" />
+    <QtMoc Include="updatesyswordlibthread.h">
+    </QtMoc>
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="version.h" />
+    <ClInclude Include="wordlibapi.h" />
+    <ClInclude Include="wordlibdef.h" />
+    <QtMoc Include="customize_ui\wordlibitemwidget.h">
+    </QtMoc>
+    <QtMoc Include="wordlibstackedwidget.h">
+    </QtMoc>
+    <QtMoc Include="wordlibtableitemwidget.h">
+    </QtMoc>
+    <ClInclude Include="wordlibutils.h" />
+    <ClInclude Include="zlib\zip.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:throwingNew -Zc:referenceBinding /utf-8 -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E -Za $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;debug\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:throwingNew -Zc:referenceBinding /utf-8 -O2 -MD -Zi -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E -Za $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="widgets.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="aboutstackedwidget.ui">
+    </QtUic>
+    <QtUic Include="addoreditphrasedialog.ui">
+    </QtUic>
+    <QtUic Include="adduserwordlibtableitem.ui">
+    </QtUic>
+    <QtUic Include="advancedconfigstackedwidget.ui">
+    </QtUic>
+    <QtUic Include="basicconfigstackedwidget.ui">
+    </QtUic>
+    <QtUic Include="checkfailedstackedwidget.ui">
+    </QtUic>
+    <QtUic Include="customize_ui\customizebtngroup.ui">
+    </QtUic>
+    <QtUic Include="customize_ui\customizephrasebtn.ui">
+    </QtUic>
+    <QtUic Include="editphrasefiledialog.ui">
+    </QtUic>
+    <QtUic Include="feedbackstackedwidget.ui">
+    </QtUic>
+    <QtUic Include="fileviewerdialog.ui">
+    </QtUic>
+    <QtUic Include="fuzzydialog.ui">
+    </QtUic>
+    <QtUic Include="informmsgbox.ui">
+    </QtUic>
+    <QtUic Include="mainwindow.ui">
+    </QtUic>
+    <QtUic Include="newenrollstackedwidget.ui">
+    </QtUic>
+    <QtUic Include="newschemedlg.ui">
+    </QtUic>
+    <QtUic Include="outputwordlibdlg.ui">
+    </QtUic>
+    <QtUic Include="personaccountstackedwidget.ui">
+    </QtUic>
+    <QtUic Include="phraseoptionwidget.ui">
+    </QtUic>
+    <QtUic Include="customize_ui\singlekey.ui">
+    </QtUic>
+    <QtUic Include="skinconfigstackedwidget.ui">
+    </QtUic>
+    <QtUic Include="spschemeviewdlg.ui">
+    </QtUic>
+    <QtUic Include="spsetplandlg.ui">
+    </QtUic>
+    <QtUic Include="suggestset.ui">
+    </QtUic>
+    <QtUic Include="toviewphrasedialog.ui">
+    </QtUic>
+    <QtUic Include="customize_ui\wordlibitemwidget.ui">
+    </QtUic>
+    <QtUic Include="wordlibstackedwidget.ui">
+    </QtUic>
+    <QtUic Include="wordlibtableitemwidget.ui">
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\about.png" />
+    <None Include="image\about_logo.png" />
+    <None Include="image\about_main_logo.png" />
+    <None Include="image\about_pressed.png" />
+    <None Include="image\account.png" />
+    <None Include="image\account_pressed.png" />
+    <None Include="image\account_update.png" />
+    <None Include="image\advanced.png" />
+    <None Include="image\advanced_pressed.png" />
+    <None Include="image\basic_default.png" />
+    <None Include="image\basic_phrase.png" />
+    <None Include="image\basic_smart.png" />
+    <None Include="image\bbs.png" />
+    <None Include="image\bihua-tip.png" />
+    <None Include="image\blueclose.png" />
+    <None Include="image\calendar.png" />
+    <None Include="image\chaifen-tip.png" />
+    <None Include="image\checked-radio.png" />
+    <None Include="image\checked.png" />
+    <None Include="image\checkfailed_bgimg.png" />
+    <None Include="image\preview\chttrans_inactive.png" />
+    <None Include="image\close.png" />
+    <None Include="image\close_hover.png" />
+    <None Include="image\cloud.png" />
+    <None Include="image\combobox_arrow.png" />
+    <None Include="image\combobox_arrow_clicked.png" />
+    <None Include="image\company_qr_code.png" />
+    <None Include="image\config.png" />
+    <None Include="image\config_pressed.png" />
+    <None Include="image\copyImage.png" />
+    <None Include="image\create_wordlib_image.png" />
+    <None Include="image\default_user.png" />
+    <None Include="image\delete.png" />
+    <None Include="image\feedback.png" />
+    <None Include="image\feedback_header.png" />
+    <None Include="image\feedback_pressed.png" />
+    <None Include="image\skin_font\font_14.png" />
+    <None Include="image\skin_font\font_16.png" />
+    <None Include="image\skin_font\font_18.png" />
+    <None Include="image\skin_font\font_20.png" />
+    <None Include="image\skin_font\font_24.png" />
+    <None Include="image\skin_font\font_28.png" />
+    <None Include="image\skin_font\font_32.png" />
+    <None Include="image\skin_font\font_36.png" />
+    <None Include="image\skin_font\font_42.png" />
+    <None Include="image\skin_font\font_48.png" />
+    <None Include="image\preview\fullwidth_inactive.png" />
+    <None Include="image\help.png" />
+    <None Include="image\help_hover.png" />
+    <None Include="image\hover-checked-radio.png" />
+    <None Include="image\hover-checked.png" />
+    <None Include="image\hover-unchecked-radio.png" />
+    <None Include="image\hover-unchecked.png" />
+    <QtRcc Include="image.qrc">
+    </QtRcc>
+    <None Include="image\imeWeb.png" />
+    <None Include="image\imode-date.png" />
+    <None Include="image\imodeTooltip.png" />
+    <None Include="image\input_bar_set.png" />
+    <None Include="image\input_wordlib_image.png" />
+    <None Include="image\insert_image.png" />
+    <None Include="image\key_label_image.png" />
+    <None Include="image\keyboard.png" />
+    <None Include="image\preview\left.svg" />
+    <None Include="image\loading.gif" />
+    <None Include="image\logined_boy.png" />
+    <None Include="image\logined_girl.png" />
+    <None Include="image\logo.ico" />
+    <None Include="image\logo.png" />
+    <None Include="image\preview\logo.png" />
+    <None Include="image\preview\logo_cand.svg" />
+    <None Include="image\minimize.png" />
+    <None Include="image\model.png" />
+    <None Include="image\model_pressed.png" />
+    <None Include="image\more_wordlib_image.png" />
+    <None Include="image\other_label_image.png" />
+    <None Include="image\output_wordlib_image.png" />
+    <None Include="image\password.png" />
+    <None Include="image\phone.png" />
+    <None Include="image\phrase_delete.png" />
+    <None Include="image\phrase_edit.png" />
+    <None Include="image\preview\pinyin.png" />
+    <None Include="image\preview\punc_inactive.png" />
+    <None Include="qt_zh_CN.qm" />
+    <None Include="image\right.png" />
+    <None Include="image\preview\right.svg" />
+    <None Include="image\select_all.png" />
+    <None Include="image\config\selfdefined.png" />
+    <None Include="image\config\set_fcitx.png" />
+    <None Include="image\preview\setting.png" />
+    <None Include="image\config\shortcut.png" />
+    <None Include="image\config\show.png" />
+    <None Include="image\skin.png" />
+    <None Include="image\skin_pressed.png" />
+    <None Include="image\config\smart_option.png" />
+    <None Include="image\speed.png" />
+    <None Include="image\status_bar_set.png" />
+    <None Include="image\switch_close.png" />
+    <None Include="image\switch_open.png" />
+    <None Include="image\preview\symbol.png" />
+    <None Include="image\preview\tab.svg" />
+    <None Include="image\umode-tip.png" />
+    <None Include="image\un_select_all.png" />
+    <None Include="image\unabled_check.png" />
+    <None Include="image\unchecked-radio.png" />
+    <None Include="image\unchecked.png" />
+    <None Include="image\unlogin_user.png" />
+    <None Include="image\user_wordlib_import.png" />
+    <None Include="image\username.png" />
+    <None Include="image\web_addr.png" />
+    <None Include="image\white_close.png" />
+    <None Include="image\config\word_phrase_option.png" />
+    <None Include="image\wordlib.png" />
+    <None Include="image\wordlib_delete.png" />
+    <None Include="image\wordlib_delete_hover.png" />
+    <None Include="image\wordlib_delete_pressed.png" />
+    <None Include="image\wordlib_export.png" />
+    <None Include="image\wordlib_item_delete.png" />
+    <None Include="image\wordlib_pressed.png" />
+    <None Include="image\wrong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="appicon.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>symbol-style.qss</file>
+        <file>symbols.txt</file>
+        <file>image/hover_package.png</file>
+        <file>image/normal_package.png</file>
+        <file>image/logo.jpg</file>
+        <file>image/close.png</file>
+        <file>image/close_hover.png</file>
+        <file>image/logo.png</file>
+        <file>image/minimize.png</file>
+        <file>image/logo.ico</file>
+        <file>image/search.png</file>
+        <file>image/search_close.png</file>
+        <file>image/search_close_hover.png</file>
+        <file>data/symbol-describe.txt</file>
+        <file>image/returnArrow.png</file>
+    </qresource>
+</RCC>

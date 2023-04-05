@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="29px" viewBox="0 0 28 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>pinyin</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="工具栏按键" transform="translate(-139.000000, -107.000000)">
+            <g id="pinyin" transform="translate(139.000000, 107.000000)">
+                <g id="框">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="蒙版" fill="#E2EBF0" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <polygon fill="url(#linearGradient-3)" fill-rule="nonzero" mask="url(#mask-2)" points="-49 0 281 0 281 29 -49 29"></polygon>
+                </g>
+                <path d="M8,9 L13,9 L13,8 C13,7.45 13.45,7 14,7 C14.55,7 15,7.45 15,8 L15,9 L20,9 C20.55,9 21,9.45 21,10 L21,16 C21,16.55 20.55,17 20,17 L15,17 L15,21 C15,21.55 14.55,22 14,22 C13.45,22 13,21.55 13,21 L13,17 L8,17 C7.45,17 7,16.55 7,16 L7,10 C7,9.45 7.45,9 8,9 Z M9,15 L13,15 L13,11 L9,11 L9,15 Z M19,15 L19,11 L15,11 L15,15 L19,15 Z" id="中" fill="#017BC9"></path>
+            </g>
+        </g>
+    </g>
+</svg>

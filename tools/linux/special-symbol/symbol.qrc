@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>symbols.txt</file>
+        <file>logo.png</file>
+        <file>qss/basicStyleSheet.qss</file>
+        <file>image/close_hover.svg</file>
+        <file>image/close.svg</file>
+    </qresource>
+</RCC>

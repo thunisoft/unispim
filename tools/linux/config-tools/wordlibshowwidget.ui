@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WordlibShowWidget</class>
+ <widget class="QWidget" name="WordlibShowWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>570</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <widget class="QLabel" name="tip_image_label_1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>0</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/image/config/word_phrase_option.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tip_wordlib_label_1">
+   <property name="geometry">
+    <rect>
+     <x>42</x>
+     <y>1</y>
+     <width>78</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>用户词库</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tip_wordlib_label_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>20</y>
+     <width>466</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>添加，批量添加到用户词库；导出，将用户词库导出到txt文件中；
+清空，删除用户词库。</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="add_word_push_button">
+   <property name="geometry">
+    <rect>
+     <x>269</x>
+     <y>85</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>添加词库</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="export_wordlib_push_button">
+   <property name="geometry">
+    <rect>
+     <x>359</x>
+     <y>85</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>导出词库</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clear_wordlib_push_button">
+   <property name="geometry">
+    <rect>
+     <x>449</x>
+     <y>85</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>清空词库</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tip_image_label_2">
+   <property name="geometry">
+    <rect>
+     <x>21</x>
+     <y>130</y>
+     <width>21</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/image/config/word_phrase_option.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tip_word_label_3">
+   <property name="geometry">
+    <rect>
+     <x>42</x>
+     <y>135</y>
+     <width>78</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>分类词库</string>
+   </property>
+  </widget>
+  <widget class="CustomizeTablewidgetForAddWordlib" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>160</y>
+     <width>511</width>
+     <height>254</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CustomizeTablewidgetForAddWordlib</class>
+   <extends>QTableWidget</extends>
+   <header>customize_ui/customizetablewidgetforaddwordlib.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,31 @@
+QCheckBox:indicator {
+width:  16px;
+height: 16px;
+}
+QCheckBox::indicator:unchecked {
+image: url(:/image/unchecked.svg);
+}
+QCheckBox::indicator:unchecked:hover {
+image: url(:/image/hover-unchecked.svg);
+}
+QCheckBox::indicator:checked {
+image: url(:/image/checked.svg);
+}
+QCheckBox::indicator:checked:hover {
+image: url(:/image/hover-checked.svg);
+}
+
+QRadioButton::indicator:checked{
+image: url(:/image//checked-radio.svg);
+}
+QRadioButton::indicator:unchecked{
+image: url(:/image//unchecked-radio.svg);
+}
+QRadioButton::indicator:checked:hover{
+image: url(:/image//hover-checked-radio.svg);
+}
+QRadioButton::indicator:unchecked:hover{
+image: url(:/image//hover-unchecked-radio.svg);
+}
+
+

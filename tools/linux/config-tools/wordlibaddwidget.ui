@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WordlibAddWidget</class>
+ <widget class="QWidget" name="WordlibAddWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>570</width>
+    <height>472</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="tip_label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>31</y>
+     <width>240</width>
+     <height>235</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1.每行不能超过8个字，多余的会
+被抛弃。
+2.系统会自动为汉字注音，不需要
+手动注音，多音字除外。
+3.多音字请直接在读音的后边添加
+拼音，例：快乐le每一天。
+4.文本中除拼音外，不要包含数字、
+标点、特殊字符号及图案，含以
+上内容将会被过滤。
+例： 没mei精打采 ；神出鬼没mo                        </string>
+   </property>
+  </widget>
+  <widget class="CustomizeQTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>279</x>
+     <y>20</y>
+     <width>250</width>
+     <height>361</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lable_export_by_file">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>280</y>
+     <width>255</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>从文本导入:
+1.
+2.文件编码需是utf-8编码</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>271</x>
+     <y>385</y>
+     <width>267</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="import_from_file_push_button">
+      <property name="minimumSize">
+       <size>
+        <width>75</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>75</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>文本导入</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="import_push_button">
+      <property name="minimumSize">
+       <size>
+        <width>75</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>75</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>导入</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="return_push_button">
+      <property name="minimumSize">
+       <size>
+        <width>75</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>75</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="template_btn">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>309</y>
+     <width>33</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>示例</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CustomizeQTextEdit</class>
+   <extends>QTextEdit</extends>
+   <header location="global">customize_ui/customizeqtextedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

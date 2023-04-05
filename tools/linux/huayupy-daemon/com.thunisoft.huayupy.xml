@@ -1,0 +1,16 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+"http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="com.thunisoft.huayupy">
+    <signal name="msgFromSettingsToDaemon">
+      <arg name="input_frame" type="i" direction="in"/>
+      <arg name="msg_info" type="i" direction="in"/>
+    </signal>
+    <signal name="msgFromDaemonToSettings">
+      <arg name="msg_info" type="i" direction="out"/>
+    </signal>
+    <signal name="msgFromEngineToDaemon">
+      <arg name="msg_info" type="i" direction="in"/>
+      <arg name="input_num" type="i" direction="in"/>
+    </signal>
+</node>

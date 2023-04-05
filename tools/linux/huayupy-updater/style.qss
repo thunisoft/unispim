@@ -1,0 +1,12 @@
+QWidget#main_widget
+{
+background-color:#FFFFFF;
+border: 1px solid #DCDCDC;
+}
+
+QPushButton[type="normal"]{
+background-color:#4D9CF8;
+color:#FFFFFF;
+font-size:17px;
+border-radius:3px;
+}

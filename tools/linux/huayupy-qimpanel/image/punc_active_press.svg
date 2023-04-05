@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="29px" viewBox="0 0 28 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 44</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="工具栏按键" transform="translate(-245.000000, -215.000000)">
+            <g id="编组-44" transform="translate(245.000000, 215.000000)">
+                <polygon id="矩形-34-拷贝-3" fill="#E2EBF0" fill-rule="nonzero" points="0 0 28 0 28 29 0 29"></polygon>
+                <g id="组-10" transform="translate(7.000000, 8.000000)">
+                    <path d="M11.5,6 C12.88,6 14,7.12 14,8.5 C14,9.88 12.88,11 11.5,11 C10.12,11 9,9.88 9,8.5 C9,7.12 10.12,6 11.5,6 Z" id="椭圆-3" fill="#4C9192" fill-rule="nonzero"></path>
+                    <path d="M13.97,8.97 C13.97,8.97 12.69,14.97 7.91,15 C7.91,15 10.84,13.47 11.06,8.97 L13.97,8.97 Z" id="形状-3" fill="#4C9192" fill-rule="nonzero"></path>
+                    <path d="M3,0 C4.66,0 6,1.34 6,3 C6,4.66 4.66,6 3,6 C1.34,6 0,4.66 0,3 C0,1.34 1.34,0 3,0 Z M2,4 L4,4 L4,2 L2,2 L2,4 Z" id="椭圆-4" fill="#338283"></path>
+                    <polygon id="矩形-15" fill="#D5E9F6" fill-rule="nonzero" points="2 2 4 2 4 4 2 4"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

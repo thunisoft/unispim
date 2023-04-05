@@ -1,0 +1,16 @@
+﻿{
+    "id":"D1A821C7-B1E4-4F7F-8C60-3EAC3523C06F",
+    "addonname":"special-symbol",
+    "displayName":"符号大全",
+    "publisher":"thunisoft",
+    "author":"thunisoft",
+    "clientVerison":"1.0.0",
+    "homepage":"pinyin.thunisoft.com",
+	"clientpage":"pinyin.thunisoft.com",
+    "categories":"image",
+    "description":"用于输入各种特殊符号",
+    "exepath":"../../special-symbols-fcitx",
+    "paramer":"82717623-mhe4-0293-aduh-ku87wh6328ne",
+    "version":"1.0.0",
+    "icon":"image/icon.png"
+}

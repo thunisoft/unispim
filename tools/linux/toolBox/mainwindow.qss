@@ -1,0 +1,32 @@
+/*主窗口的样式*/
+QWidget#inner_widget
+{
+	radius:4px;
+	background-color:rgb(255,255,255);
+}
+
+/*窗口的标题*/
+QLabel#title_label
+{
+	font-family:"Microsoft YaHei";
+	font-size:14px;
+	color:#000000;
+	font-weight:400;
+}
+
+/*close按钮的样式*/
+.QPushButton[type="closebtn"]{
+image:url(:/image/close.png);
+border:0px solid;
+width:50px;
+height:50px;
+background:transparent;
+}
+.QPushButton[type="closebtn"]:hover{
+image:url(:/image/close_hover.png);
+background:#FD4D4D
+}
+.QPushButton[type="closebtn"]:pressed{
+image:url(:/image/close_hover.png);
+border:0px solid;
+}

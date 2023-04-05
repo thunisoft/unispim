@@ -1,0 +1,27 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+"http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="com.thunisoft.update">
+    <signal name="message">
+      <arg name="name" type="s" direction="out"/>
+      <arg name="text" type="s" direction="out"/>
+    </signal>
+    <signal name="action">
+      <arg name="nickname" type="s" direction="out"/>
+      <arg name="text" type="s" direction="out"/>
+    </signal>
+    <signal name="engineMessage">
+      <arg name="key" type="s" direction="out"/>
+      <arg name="value" type="s" direction="out"/>
+    </signal>
+    <signal name="msgFromSettings">
+      <arg name="key" type="s" direction="out"/>
+    </signal>
+    <signal name="msgToSettings">
+      <arg name="key" type="s" direction="out"/>
+      <arg name="value" type="s" direction="out"/>
+    </signal>
+    <signal name="msgTodaemon">
+      <arg name="msg" type="s" direction="out"/>
+    </signal>
+</node>

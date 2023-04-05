@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="332px" height="31px" viewBox="0 0 332 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bg_status</title>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#F9FBFD" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.449904642%" y1="50%" x2="100%" y2="49.9995295%" id="linearGradient-2">
+            <stop stop-color="#88CECE" offset="0%"></stop>
+            <stop stop-color="#7FD4E3" offset="46.7384178%"></stop>
+            <stop stop-color="#78B5E5" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#C6DCEF" offset="0%"></stop>
+            <stop stop-color="#C6DCEF" stop-opacity="0.00784855702" offset="5.97683566%"></stop>
+            <stop stop-color="#C6DCEF" stop-opacity="0" offset="94.2335009%"></stop>
+            <stop stop-color="#C6DCEF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="工具栏按键" transform="translate(-169.000000, -286.000000)">
+            <g id="bg_status" transform="translate(170.000000, 286.000000)">
+                <path d="M2,1 L328,1 C329.1,1 330,1.9 330,3 L330,28 C330,29.1 329.1,30 328,30 L2,30 C0.9,30 0,29.1 0,28 L0,3 C0,1.9 0.9,1 2,1 Z" id="框" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                <path d="M328,0.5 C328.6875,0.5 329.312818,0.780711668 329.766053,1.23394661 C330.219288,1.68718155 330.5,2.3125 330.5,3 L330.5,3 L330.5,28 C330.5,28.6875 330.219288,29.3128184 329.766053,29.7660534 C329.312818,30.2192883 328.6875,30.5 328,30.5 L328,30.5 L2,30.5 C1.3125,30.5 0.68718155,30.2192883 0.233946609,29.7660534 C-0.219288332,29.3128184 -0.5,28.6875 -0.5,28 L-0.5,28 L-0.5,3 C-0.5,2.3125 -0.219288332,1.68718155 0.233946609,1.23394661 C0.68718155,0.780711668 1.3125,0.5 2,0.5 L2,0.5 L328,0.5 Z" id="框" stroke="#C6DCEF" fill-rule="nonzero"></path>
+                <rect id="矩形" fill="url(#linearGradient-2)" x="2" y="0" width="326" height="1"></rect>
+                <rect id="矩形" fill="url(#linearGradient-3)" x="2" y="0" width="326" height="1"></rect>
+                <polygon id="竖线" fill="#C6DCEF" fill-rule="nonzero" opacity="0.451" points="37 7 38 7 38 24 37 24"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

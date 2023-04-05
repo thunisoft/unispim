@@ -1,0 +1,16 @@
+{
+    "id":"1E19D7BE-672A-4425-A76D-ED0B0C4CB29C",
+    "addonname":"config-tools",
+    "displayName":"属性设置",
+    "publisher":"thunisoft",
+    "author":"thunisoft",
+    "clientVerison":"1.0.0",
+    "homepage":"pinyin.thunisoft.com",
+	"clientpage":"pinyin.thunisoft.com",
+    "categories":"image",
+    "description":"用于输入法属性设置",
+    "exepath":"../../huayupy-config-tools-fcitx",
+    "paramer":"82717623-mhe4-0293-aduh-ku87wh6328ne",
+    "version":"1.0.0",
+    "icon":"image/icon.png"
+}

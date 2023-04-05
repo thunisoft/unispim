@@ -1,0 +1,233 @@
+﻿/*主窗口的样式*/
+QWidget#inner_widget
+{
+	border-radius:4px;
+	background-color:rgb(255,255,255);
+}
+QDialog QWidget#shortcut_widget
+{
+	border: 0px solid #4D9CF8;
+	background-color:#FFFFFF;
+	border-radius:5px;
+}
+.CustomKeySequenceEdit
+{	
+	font-size:16px;
+	color:#000000;
+	font-weight:400;
+}
+
+/*窗口的标题*/
+QLabel#title_label
+{	
+	font-size:16px;
+	color:#000000;
+	font-weight:400;
+}
+QLabel[type="tip_info"]
+{
+	font-size:16px;
+	color:#000000;
+	font-weight:400;
+}
+
+QPushButton[type="toolbtn"]{
+border:0px solid;
+background-color:#FFFFFF;
+outline:none;
+}
+
+QPushButton[type="toolbtn"]:hover{
+border: 2px solid #4D9CF8;
+border-radius: 5px;
+background-color:#FFFFFF;
+outline:none;
+}
+
+QPushButton[type="toolbtn"]:pressed{
+border: 2px solid #017BC9;
+border-radius: 5px;
+background-color:#FFFFFF;
+outline:none;
+}
+
+/*close按钮的样式*/
+.QPushButton[type="closebtn"]{
+image:url(:/image/close.png);
+border:0px solid;
+background:transparent;
+outline:none;
+}
+.QPushButton[type="closebtn"]:hover{
+image:url(:/image/close_hover.png);
+background:#FD4D4D;
+outline:none;
+}
+.QPushButton[type="closebtn"]:pressed{
+image:url(:/image/close_hover.png);
+border:0px solid;
+outline:none;
+}
+
+/*QScrollArea的样式无法修改背景颜色*/
+QWidget QScrollArea { 
+border:0px; 
+background-color: rgb(255,255,255);
+} 
+QWidget QScrollArea QScrollBar:vertical { 
+background : rgba(0, 0, 0, 0%);
+width : 8px;                   
+margin : 0px, 0px, 0px, 0px;   
+} 
+QWidget QScrollArea QScrollBar::handle:vertical {
+width : 8px; 
+background: #A8CFFC;
+border-radius : 3px;    
+} 
+QWidget QScrollArea QScrollBar::handle:hover {
+width : 8px; 
+background:#A8CFFC;
+border-radius: 3px;    
+} 
+QWidget QScrollArea QScrollBar::add-line:vertical { 
+border:none; 
+} 
+QWidget QScrollArea QScrollBar::sub-line:vertical { 
+border:none; 
+} 
+QWidget QScrollArea QScrollBar:horizontal { 
+background : rgba(0, 0, 0, 0%);
+height : 6px;                   
+margin : 0px, 0px, 0px, 0px;   
+} 
+QWidget QScrollArea QScrollBar::handle:horizontal {
+width : 6px; 
+height: 6px;
+background:rgb(226, 226, 226);
+border-radius : 3px;    
+} 
+QWidget QScrollArea QScrollBar::add-line:horizontal { 
+border:none; 
+} 
+QWidget QScrollArea QScrollBar::sub-line:horizontal { 
+border:none; 
+} 
+
+QFrame#split_line
+{
+color:#E4E4E4;
+}
+QTableView[type="toolbox_view"]
+{
+border:none;
+margin:0px 4px 4px 4px;
+background-color:#FFFFFF;
+}
+QTableView[type="toolbox_view"]::item
+{
+border:none;
+background-color:#FFFFFF;
+outline:none;
+}
+
+QTableView[type="toolbox_view"]::item::selected
+{
+border:none;
+background-color:#FFFFFF;
+outline:none;
+}
+QTableView[type="toolbox_view"]::item::hover
+{
+border:none;
+background-color:#FFFFFF;
+outline:none;
+}
+
+/*设置滚动条的样式*/
+QScrollBar:vertical { 
+background : rgba(0, 0, 0, 0%);
+width : 6px;         
+margin : 0px, 0px, 0px, 0px;  
+}
+ 
+QScrollBar::handle:vertical {
+width : 6px; 
+background: #A8CFFC;
+height: 200px;
+border-radius: 3px;  
+} 
+
+QScrollBar::handle:hover {
+width: 6px; 
+height: 200px;
+background: #A8CFFC;
+border-radius: 3px;  
+}
+ 
+QScrollBar::add-line:vertical { 
+border:none;
+}
+ 
+QScrollBar::sub-line:vertical { 
+border:none;
+} 
+
+
+
+
+QLabel[type="button-name"]{
+font-size:13px;
+color:#000000;
+font-weight:430;
+}
+
+/*****菜单的样式*****/
+QMenu
+{
+margin:0px;
+background-color:#FFFFFF;
+border: 1px solid #CCCCCC;
+}
+QMenu::item
+{
+padding-left:6px;
+font-size:13px;
+color:#000000;
+font-weight:430;
+background: #FFFFFF;
+height:30px;
+min-width:80px;
+}
+QMenu::item::selected
+{
+font-size:13px;
+color:#000000;
+font-weight:430;
+background: #A8CFFC;
+}
+
+.CustomInfomBox QLabel
+{
+background-color: #E8F4FB;
+border: 2px solid #E8F4FB;
+font-size: 14px;
+color: #4D4D4D;
+font-weight: 400;
+}
+
+QProgressBar{
+border:none;
+background-color: #E8F4FB;
+border-radius:3px;
+}
+QProgressBar:chunk{
+background-color:#A8CFFC;
+border-radius:3px;
+}
+
+CustomTooltip QLabel
+{
+font-size:13px;
+color:#000000;
+font-weight:430;
+}

@@ -1,0 +1,272 @@
+#-------------------------------------------------
+#
+# Project created by QtCreator 2019-03-14T15:09:27
+#
+#-------------------------------------------------
+
+QT       += core gui dbus network #charts
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
+#TARGET = huayupy-config-tools-ibus
+TARGET = huayupy-config-tools-fcitx
+TEMPLATE = app
+
+CONFIG += link_pkgconfig
+
+# if bulild with ibus, define IBUS in CONFIG
+#CONFIG += IBUS
+
+IBUS {
+PKGCONFIG += ibus-1.0
+DEFINES += USE_IBUS
+} else {
+}
+
+#INCLUDEPATH += /usr/include/x86_64-linux-gnu/qt5/QtGui/#
+
+SOURCES += main.cpp\
+        mainwindow.cpp \
+    tabwidgetbasic.cpp \
+    tabwidgetwordlib.cpp \
+    tabwidgetspecial.cpp \
+    tabwidgetabout.cpp \
+    tabwidgetbase.cpp \
+    config.cpp \
+    configbus.cpp \
+    inisetting.cpp \
+    cJSON.c \
+    dictionary.c \
+    iniparser.c \
+    suggestsetwindow.cpp \
+    suggestsetwidget.cpp \
+    fuzzysetwindow.cpp  \
+    fuzzysetwidget.cpp \
+    tabloginregister.cpp \
+    loginwidget.cpp \
+    registerwidget.cpp \
+    userwidget.cpp \
+    logindialog.cpp \
+    registerdialog.cpp \
+    checkupdatefaild.cpp \
+    tabwidgetaccount.cpp \
+    tabwidgetupdate.cpp \
+    tabwidgetserver.cpp \
+    tipdaemonisnoton.cpp \
+    oncheckerror.cpp \
+    tabwidgetstats.cpp \
+    tabwidgetphrase.cpp \
+    addphrasedialog.cpp \
+    editphrasedialog.cpp \
+    utils.cpp \
+    phonecorrectdlg.cpp \
+    customize_ui/customtabstyle.cpp \
+    customize_ui/customize_qwidget.cpp \
+    customize_ui/customizeoptionpushbutton.cpp \
+    customize_ui/customizeqscrollarea.cpp \
+    customize_ui/customizecombobox.cpp \
+    customize_ui/customizeradiobtn.cpp \
+    customize_ui/customizecheckbox.cpp \
+    customize_ui/customizeslider.cpp \
+    customize_ui/customizedeletewrodlibbutton.cpp \
+    customize_ui/customizefont.cpp \
+    customize_ui/customizeqtablewidget.cpp \
+    configstackedwidget.cpp \
+    customize_ui/customizenormalpushbutton.cpp \
+    customize_ui/customizenoborderbutton.cpp \
+    customize_ui/customizelabel.cpp \
+    addwordlibdialog.cpp \
+    customize_ui/customizetablewidgetforaddwordlib.cpp \
+    customize_ui/customizeclosepushbutton.cpp \
+    customize_ui/customize_mainwindow.cpp \
+    customize_ui/customizeswitchslider.cpp \
+    importuserwordlibdialog.cpp \
+    modestackedwidget.cpp \
+    customize_ui/customizehelpbutton.cpp \
+    toviewphrasedialog.cpp \
+    dbusmessager.cpp \
+    phraseoptionwidget.cpp \
+    addoreditphrasedialog.cpp \
+    customize_ui/customizeqtextedit.cpp \
+    fileviewerdialog.cpp \
+    aboutstackedwidget.cpp\
+    phrasevalidator.cpp \
+    addwordlibfromserverdialog.cpp \
+    wordlibdownloaddialog.cpp \
+    loginstackedwidget.cpp \
+    accountstackedwidget.cpp \
+    addwordlibmaindialog.cpp \
+    fuzzydialog.cpp \
+    wordlibmainwidget.cpp \
+    wordlibshowwidget.cpp \
+    wordlibcellwidget.cpp \
+    checkfailedstackedwidget.cpp \
+    wordlibnetworker.cpp \
+    registerstackedwidget.cpp \
+    customize_ui/customizelineedit.cpp \
+    enrollstackedwidget.cpp \
+    changepassworddlg.cpp \
+    wordlibaddwidget.cpp \
+    customize_ui/customizemessagebox.cpp \
+    customize_ui/customizeradiuspushbutton.cpp \
+    phrasemodel.cpp \
+    editphrasefiledialog.cpp \
+    customize_ui/customizemessageboxdialog.cpp \
+    customize_ui/customizemessageboxwithreturnvaluedialog.cpp \
+    customize_ui/generalstyledefiner.cpp \
+    resetpasswdstackedwidget.cpp \
+
+
+HEADERS  += mainwindow.h \
+    tabwidgetbasic.h \
+    tabwidgetwordlib.h \
+    tabwidgetspecial.h \
+    tabwidgetabout.h \
+    tabwidgetbase.h \
+    configbus.h \
+    configbusibus.h \
+    configbusdbus.h \
+    config.h \
+    inisetting.h \
+    commondef.h \
+    cJSON.h \
+    dictionary.h \
+    iniparser.h \
+    define.h \
+    dbusmessager.h \
+    suggestsetwindow.h \
+    suggestsetwidget.h \
+    fuzzysetwindow.h  \
+    fuzzysetwidget.h \
+    tabloginregister.h \
+    loginwidget.h \
+    registerwidget.h \
+    userwidget.h \
+    logindialog.h \
+    registerdialog.h \
+    checkupdatefaild.h \
+    customtabstyle.h \
+    tabwidgetaccount.h \
+    tabwidgetupdate.h \
+    tabwidgetserver.h \
+    tipdaemonisnoton.h \
+    oncheckerror.h \
+    tabwidgetstats.h \
+    tabwidgetphrase.h \
+    addphrasedialog.h \
+    editphrasedialog.h \
+    utils.h \
+    phonecorrectdlg.h \
+    defines.h \
+    customize_ui/customtabstyle.h \
+    customize_ui/customize_qwidget.h \
+    customize_ui/customizeoptionpushbutton.h \
+    customize_ui/customizeqscrollarea.h \
+    customize_ui/customizecombobox.h \
+    customize_ui/customizeradiobtn.h \
+    customize_ui/customizecheckbox.h \
+    customize_ui/customizeslider.h \
+    customize_ui/customizedeletewrodlibbutton.h \
+    customize_ui/customizefont.h \
+    customize_ui/customizeqtablewidget.h \
+    configstackedwidget.h \
+    customize_ui/customizenormalpushbutton.h \
+    customize_ui/customizenoborderbutton.h \
+    customize_ui/customizelabel.h \
+    addwordlibdialog.h \
+    customize_ui/customizetablewidgetforaddwordlib.h \
+    customize_ui/customizeclosepushbutton.h \
+    customize_ui/customize_mainwindow.h \
+    customize_ui/customizeswitchslider.h \
+    importuserwordlibdialog.h \
+    modestackedwidget.h \
+    customize_ui/customizehelpbutton.h \
+    toviewphrasedialog.h \
+    phraseoptionwidget.h \
+    addoreditphrasedialog.h \
+    customize_ui/customizeqtextedit.h \
+    fileviewerdialog.h \
+    aboutstackedwidget.h \
+    phrasevalidator.h \
+    addwordlibfromserverdialog.h \
+    wordlibdownloaddialog.h \
+    loginstackedwidget.h \
+    accountstackedwidget.h \
+    addwordlibmaindialog.h \
+    fuzzydialog.h \
+    wordlibmainwidget.h \
+    wordlibshowwidget.h \
+    wordlibcellwidget.h \
+    checkfailedstackedwidget.h \
+    wordlibnetworker.h \
+    registerstackedwidget.h \
+    customize_ui/customizelineedit.h \
+    enrollstackedwidget.h \
+    changepassworddlg.h \
+    wordlibaddwidget.h \
+    customize_ui/customizemessagebox.h \
+    customize_ui/customizeradiuspushbutton.h \
+    phrasemodel.h \
+    editphrasefiledialog.h \
+    customize_ui/customizemessageboxdialog.h \
+    customize_ui/customizemessageboxwithreturnvaluedialog.h \
+    customize_ui/generalstyledefiner.h \
+    resetpasswdstackedwidget.h \
+
+    DBUS_ADAPTORS += com.thunisoft.update.xml \
+                     com.thunisoft.huayupy.xml
+    DBUS_INTERFACES += com.thunisoft.update.xml \
+                       com.thunisoft.huayupy.xml
+
+FORMS    += login.ui \
+            register.ui \
+            openofficewebsite.ui \
+            tabbasic.ui \
+            mainwindow.ui \
+    account.ui \
+    update.ui \
+    server.ui \
+    special.ui \
+    wordlib.ui \
+    about.ui \
+    tipdaemonisnoton.ui \
+    suggestset.ui \
+    tabstats.ui \
+    phrase.ui \
+    editphrasedialog.ui \
+    phonecorrectdlg.ui \
+    configstackedwidget.ui \
+    addwordlibdialog.ui \
+    importuserwordlibdialog.ui \
+    modestackedwidget.ui \
+    toviewphrasedialog.ui \
+    phraseoptionwidget.ui \
+    addoreditphrasedialog.ui \
+    fileviewerdialog.ui \
+    aboutstackedwidget.ui \
+    wordlibdownloaddialog.ui \
+    loginstackedwidget.ui \
+    accountstackedwidget.ui \
+    addwordlibmaindialog.ui \
+    fuzzydialog.ui \
+    wordlibmainwidget.ui \
+    wordlibshowwidget.ui \
+    wordlibcellwidget.ui \
+    checkfailedstackedwidget.ui \
+    registerstackedwidget.ui \
+    resetpasswdstackedwidget.ui \
+    enrollstackedwidget.ui \
+    changepassworddlg.ui \
+    wordlibaddwidget.ui \
+    customize_ui/customizemessagebox.ui \
+    editphrasefiledialog.ui \
+    customize_ui/customizemessageboxdialog.ui \
+    customize_ui/customizemessageboxwithreturnvaluedialog.ui
+
+include(../qtsingleapplication/src/qtsingleapplication.pri)
+
+RESOURCES += \
+    source.qrc
+
+RC_FILE += appicon.rc
+
